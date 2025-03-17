@@ -6,34 +6,44 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import TestimonialCard from "./TestimonialCard";
+import Test from "./Test";
 
 const testimonialsData = [
 	{
 		id: "1",
 		author: "William Jack",
 		designation: "Creative Director",
-		title: "Tismail",
+		title: "HIRE THE HOSTCURATOR FOR EXPERT SUPPORT! ",
 		description:
-			"As a startup, you need to find a good marketing partner who can help you connect to the right people. They advertise that they can help our company to increase your sales by up to 78% -- they exceeded our expectations.",
-		img: "https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/ReviewSection.png",
+			"Experience seamless server management and expert support with Hostcurator. Hire our dedicated team today!",
+		img: "./images/allimg/bannner1.png",
+        color:'#7947DD',
+        star:'./images/allimg/logo/stars.png',
+        star:'./images/allimg/logo/stars.png'
+	
+
 	},
 	{
 		id: "2",
 		author: "William Jack",
 		designation: "Creative Director",
-		title: "They exceeded our expectations",
+		title: "STREAMLINE YOUR SERVER MANAGEMENT",
 		description:
-			"As a startup, you need to find a good marketing partner who can help you connect to the right people. They advertise that they can help our company to increase your sales by up to 78% -- they exceeded our expectations.",
-		img: "https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/pexels-christina-morillo-1181354.png",
+			"Get peace of mind with Hostcurator's efficient server management services. Focus on your business while we handle the technicalities.",
+		img: "./images/allimg/bannner2.png",
+        color:'#F89E97',
+         star:'./images/allimg/logo/purple-star.svg'
 	},
 	{
 		id: "3",
 		author: "William Jack",
 		designation: "Creative Director",
-		title: "They exceeded our expectations",
+		title: "HIRE THE HOSTCURATOR FOR EXPERT SUPPORT! ",
 		description:
-			"As a startup, you need to find a good marketing partner who can help you connect to the right people. They advertise that they can help our company to increase your sales by up to 78% -- they exceeded our expectations.",
+			"Experience seamless server management and expert support with Hostcurator. Hire our dedicated team today!",
             img: "https://dev.hostcurator.com/wp-content/themes/Hostcurator/theme_assets/images/ReviewSection.png",
+            color:'#FD9620',
+               star:'./images/allimg/logo/purple-star.svg'  
 	},
 ];
 
@@ -41,34 +51,36 @@ const swiperSettings = {
 	slidesPerView: 1,
 	pagination: { clickable: true },
 	autoplay: { delay: 3000, disableOnInteraction: false },
-	modules: [Pagination, Autoplay],
+	modules: [ Autoplay],
+	// modules: [Pagination, Autoplay],
 };
 
 function Testimonialss1() {
 	const [activeIndex, setActiveIndex] = useState(0);
 
 	return (
-		<div className="section aximo-section-padding2">
+		<div className="section aximo-section-padding2" style={{backgroundColor:'black'}}>
 			<div className="container">
 				<div className="row align-items-center">
 					{/* Left Side - Image */}
-					<div className="col-md-6 text-center">
+					<div className="col-md-6 text-center" style={{height:'100%'}}>
 						<div className="aximo-testimonial-slider-thumb">
 							<img
 								src={testimonialsData[activeIndex].img}
 								alt="testimonial"
 								className="img-fluid"
+                              
 							/>
 						</div>
 					</div>
 
 					{/* Right Side - Testimonial Slider */}
-					<div className="col-md-6" style={{ backgroundColor: "#025E6B", borderRadius: "29px", padding: "20px" }}>
-						<div className="swiper aximo-testimonial-slider">
+					<div className="col-md-6" style={{ backgroundColor: 'color', borderRadius: "29px" }}>
+						<div className="swiper aximo-testimonial-slider" style={{borderRadius: "29px"}}>
 							<Swiper {...swiperSettings} onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}>
 								{testimonialsData.map((testimonial) => (
 									<SwiperSlide key={testimonial.id}>
-										<TestimonialCard testimonial={testimonial} />
+										<Test testimonial={testimonial} />
 									</SwiperSlide>
 								))}
 							</Swiper>

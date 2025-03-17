@@ -117,7 +117,7 @@ export default function HomeOne() {
 			{/* <Hero /> */}
 			{/* <Blogs /> */}
 <Testimonialss1/>
-			<Projects />
+			{/* <Projects /> */}
 			<Services services={servicesData} />
 			<AutoSlider />
 			<PricingPlan />
