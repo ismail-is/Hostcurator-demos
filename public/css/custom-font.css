@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Unbounded-Regular';
+    src: url('../fonts/new/Unbounded-Regular.ttf');
+    src: url('../fonts/new/Unbounded-Bold.ttf') format('embedded-opentype'),
+         url('../fonts/new/Unbounded-ExtraBold.ttf') format('woff2'),
+         url('../fonts/new/Unbounded-Light.ttf') format('woff'),
+         url('../fonts/new/Unbounded-Medium.ttf') format('truetype'),
+}
