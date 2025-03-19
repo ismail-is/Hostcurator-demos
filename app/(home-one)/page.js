@@ -18,6 +18,8 @@ import Team4Img from "@/public/images/team/team4.png";
 import TestimonialsCard from "@/components/home-four/testimonials/TestimonialsCard";
 import Testimonialss from "@/components/home-five/testimonials";
 import Testimonialss1 from "@/components/home-five/testimonials/index1";
+import OurParthner from "@/components/home-one/ourParthner";
+import ContactForm from "@/components/contact/ContactForm";
 
 const servicesData = [
 	{
@@ -116,11 +118,13 @@ export default function HomeOne() {
 		<>
 			{/* <Hero /> */}
 			{/* <Blogs /> */}
-<Testimonialss1/>
+{/* <Testimonialss1/> */}
 			{/* <Projects /> */}
 			<Services services={servicesData} />
 			<AutoSlider />
 			<PricingPlan />
+			<ContactForm />
+			<OurParthner/>
 			<BrandLogo />
 			<Testimonialss/>
 			{/* <div style={{backgroundColor:'black',margin:"0,20px,0,30px"}}>

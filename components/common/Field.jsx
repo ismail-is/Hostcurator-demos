@@ -2,7 +2,7 @@ import React from "react";
 function Field({ label, children, htmlFor, error }) {
 	const id = htmlFor || getChildId(children);
 	return (
-		<div className="aximo-account-field">
+		<div className="aximo-account-field" style={{color:"white"}}>
 			{label && <label htmlFor={id}>{label}</label>}
 			{children}
 			{error && <div className="text-danger">{error.message}</div>}

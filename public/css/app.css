@@ -2744,16 +2744,16 @@ input,
 textarea {
 	margin: 0;
 	width: 100%;
-	height: 60px;
+	height: 40px;
 	font-weight: 700;
 	color: var(--heading-color);
 	font-size: 16px;
 	border-radius: 50px;
-	background-color: transparent;
-	padding: 15px 24px !important;
+	background-color: white;
+	padding: 10px 14px !important;
 	border: none !important;
 	transition: all 0.4s;
-	border: 1px solid var(--heading-color) !important;
+	border: 2px solid black !important;
 }
 
 textarea {
@@ -8059,9 +8059,10 @@ a.forgot-password {
 	margin-bottom: 24px;
 }
 .aximo-account-field label {
-	font-weight: 700;
+	font-weight: 600;
 	display: block;
 	margin-bottom: 10px;
+	font-size: 15px;
 }
 .aximo-account-field input {
 	font-weight: 400;
